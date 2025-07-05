@@ -216,8 +216,8 @@ ALTER TABLE salesperson ADD UNIQUE (EmployeeID);
 ALTER TABLE targets ADD CONSTRAINT fk_targets_employee
 FOREIGN KEY (EmployeeID) REFERENCES salesperson(EmployeeID);
 -- -------------------------------------------------------------------------------------------------------
--- Sales Analytics Queries (50)
--- 📊 Sales & Revenue Insights
+-- Sales Analytics Queries (46)
+-- Sales & Revenue Insights
 
 -- 1. Total sales and total profit across all time
 SELECT SUM(sales) AS total_sales, SUM(sales - cost) AS total_profit FROM sales;
